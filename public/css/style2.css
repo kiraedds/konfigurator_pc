@@ -1,0 +1,479 @@
+
+
+body{
+	text-align: center;
+}
+
+
+
+h2{
+  font-family: 'Amatic SC', cursive;
+}
+
+.alert-success{
+  width: 95%;
+  margin: auto;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+}
+
+.alert-warning{
+  width: 95%;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  margin: auto;
+}
+
+
+#container{
+	text-align: center;
+}
+
+nav{
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+}
+
+#content a{
+  text-decoration: none;
+}
+
+.drop{
+	display: none;
+}
+
+/* form*/
+
+#logowanie{
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#logowanie input{
+    padding:5px; 
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    border-bottom:1px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 15px;
+    width: 40%;
+    margin: 5px;
+    font-size: 25px;
+}
+
+#logowanie input[type=submit] {
+    padding:auto; 
+    background: transparent; 
+    border:0 none;
+    cursor:pointer;
+    width: 20%;
+
+}
+
+#logowanie input:focus{
+	  border-bottom:1px solid black;
+}
+
+
+/*koniec form*/
+
+
+.rejestracja a:hover{
+    text-decoration: none;
+
+}
+
+.log{
+    float: left;
+    padding-right: 5%;
+}
+
+.log a{
+  text-decoration: none;
+}
+
+#join{
+    font-family: 'Amatic SC', cursive;
+    padding-top: 50px;
+}
+
+#join table{
+  width: 80%;
+}
+
+#join table, td{
+  text-align: right;
+}
+
+#join form{
+  font-family: 'Amatic SC', cursive;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+#join form input{
+  margin: 6px;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+} 
+
+#join form [input=type]{
+  font-size: 25px;
+  font-family: Arial;
+
+} 
+
+#join form label{
+  font-size: 25px;
+  text-align: left;
+}
+
+#menu{
+  padding-top: 20px;
+}
+.menu{
+  float: left;
+  padding-right: 10px;
+  font-size: 24px;
+}
+
+.menu a{
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  color: grey;
+}
+
+#zalogowany{
+  padding-top: 20px;
+}
+
+
+#added table{
+  width: 90%;
+  margin:auto;
+  border: 0;
+}
+   
+#added table th{
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+
+#added table td{
+  text-align: center;
+  padding: 10px;
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+.kategoria{
+  padding: 20px;
+}
+
+#kategorie .kategoria img{
+  height: 200px;
+  width: 200px;
+} 
+
+.logo img{
+  height: 130px; 
+  padding: 20px;
+}  
+
+#users table{
+  width: 90%;
+  margin:auto;
+  border: 0;
+}
+   
+#users table th{
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+    font-weight: 100;
+    border-collapse: collapse;
+}
+
+#users table td{
+  text-align: center;
+  padding: 10px;
+  font-family: Verdana;
+  font-size: 15px;
+}
+
+
+.table table{
+  width: 95%;
+  margin: auto;
+  border: 0;
+  padding-bottom: 0px;
+}
+
+#img img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+}
+#img img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+}
+
+#add{
+  padding: 40px;
+}
+
+#add form{
+  width: 50%;
+  margin: auto;
+}
+#add form select,
+#add form input,
+#add form textarea{
+  margin: 5px;
+  padding: 10px;
+  width: 90%;
+}
+
+#add  input[type=file]{
+    margin: 5px;
+  padding: 10px;
+  width: 90%;
+
+}
+
+
+
+#settings{
+  padding: 40px;
+}
+
+#settings form{
+  width: 35%;
+  margin: auto;
+}
+
+#settings form input{
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  }
+
+  .dane table{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px
+  }
+  .dane th{
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    font-weight: 100;
+    border-collapse: collapse;
+  }
+  .dane table td{
+    padding: 10px;
+    text-align: left;
+  }
+
+tr:nth-child(even)
+{background-color: #f2f2f2;}
+
+tr:hover 
+{background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #cae0e8;
+    color: #1c3556;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo img{
+  height: 100px; 
+}  
+
+#img img {
+    width: 300px;
+}
+
+  }
+
+/* select menu*/
+@media only screen and (max-width: 767px) {
+
+.dane table{
+    font-size: 12px;
+}
+#users table td{
+    font-size: 12px;
+}
+#add form{
+  width: 70%;
+  margin: auto;
+}
+
+#added table td{
+  font-size: 12px;
+}
+
+#settings form{
+  width: 70%;
+  margin: auto;
+}
+
+#join form{
+  width: 100%;
+}
+
+.table{
+  font-size: 12px;
+}
+
+#menu{
+  display: none;
+}
+
+.drop a{
+    text-decoration: none;
+    color: white;
+}
+
+.drop a:hover{
+  color: gray;
+}
+
+.drop {
+  display: inline;
+  width: 90%;
+  margin: auto;
+  font-family: 'Amatic SC', cursive;
+  font-size: 28px;
+  padding-top: 3%;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  padding-bottom: 10px;
+}
+.drop .option {
+  padding: 3%;
+  cursor: pointer;
+  background-color: white;
+  margin: auto;
+  width: 90%;
+}
+.drop .option:not(.active) {
+  display: none;
+  opacity: 0;
+  background-color: white;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 90%;        
+}
+.drop.visible {
+  webkit-animation: bounce 1s;
+          animation: bounce 1s;
+
+}
+.drop.visible:before, .drop.visible:after {
+  border-color: #fff;
+}
+.drop.visible:before {
+  opacity: 0;
+  color: black;
+}
+.drop.visible:after {
+  opacity: 1;
+}
+.drop.visible .option {
+  color: #fff;
+  display: block;
+  background-color: #c1c4c8;
+  opacity: 0.5;
+}
+.drop.opacity .option {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  opacity: 1;
+}
+
+.drop.withBG .option {
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+.drop.withBG .option:not(.placeholder):hover {
+  background-color: white;
+  color: black;
+}
+.drop.withBG .option:not(.placeholder).active {
+  background-color: white;
+}
+
+
+.drop:before {
+  border-left: none;
+  border-top: none;
+  top: 1.2em;
+}
+.drop:after {
+  border-right: none;
+  border-bottom: none;
+  opacity: 0;
+}
+
+.mini-hack {
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+
+/*koniec select*/
+#zalogowany{
+  padding-top: 20px;
+}
+
+.log{
+  float: none;
+  padding-right: 0;
+}
+
+
+#kategorie{
+  display: none;
+}
+
+.logo img{
+  height: 130px; 
+}  
+
+
+
+#img img {
+    width: 200px;
+}
+
+#logowanie input{
+  width: 47%;
+}
+
+}
