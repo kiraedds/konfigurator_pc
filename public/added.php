@@ -28,15 +28,13 @@ table{
       $result->execute();
 
   echo "<tr>"; 
-    echo "<th>ID</th> <th>Nazwa</th> <th>Rodzaj</th> <th>Kolor</th> <th>Rozmiar</th> <th>Opis</th> <th>Cena</th> <th>Zdjęcie</th> <th>Usuń</th>";
+    echo "<th>ID</th> <th>Nazwa</th> <th>Rodzaj</th> <th>Opis</th> <th>Cena</th> <th>Zdjęcie</th> <th>Usuń</th>";
   echo "</tr>";
     while($r = $result->fetch(PDO::FETCH_ASSOC)) { 
       echo "<tr>";
           echo "<td>".$r['id']."</td>";
           echo "<td>".$r['name']."</td>"; 
           echo "<td>".$r['type']."</td>";
-          echo "<td>".$r['colour']."</td>";
-          echo "<td>".$r['size']."</td>";
           echo "<td>".$r['description']."</td>";
           echo "<td>".$r['price']."</td>";
           echo "<td><div id='img'><img src='images/".$r['src']."'></div></td>";?>

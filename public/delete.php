@@ -14,6 +14,6 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 	$result = $db->prepare("DELETE FROM products WHERE id='$id'") or die("failed".mysql_error());
 	$result->execute();
 
-	$msg->warning('Produkt został usunięty');
+	echo 'Produkt został usunięty.';
 
 };?>
