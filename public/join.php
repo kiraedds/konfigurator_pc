@@ -34,8 +34,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 	$result = $db->prepare("INSERT into users (email,login,password,firstname,lastname,phone,address,role) VALUES (:email, :login, :password, :firstname, :lastname, :phone, :address, :role )" );
 
 	$result->bindParam( ':email', $_POST['email'] );
-	$result->bindParam( ':login', $_POST['login'] );
-	$result->bindParam( ':password', $_POST['password'] );
+	$result->bindParam( ':login', $_POST['login2'] );
+	$result->bindParam( ':password', $_POST['password2'] );
 	$result->bindParam( ':firstname', $_POST['firstname'] );
 	$result->bindParam( ':lastname', $_POST['lastname'] );
 	$result->bindParam( ':phone', $_POST['phone'] );
@@ -76,11 +76,11 @@ echo
 	</tr>
 	<tr>	
 		<td><label>Login</label></td>
-		<td><input type="text" name="login" required></br></td>
+		<td><input type="text" name="login2" required></br></td>
 	</tr>
 	<tr>	
 		<td><label>Hasło</label></td>
-		<td><input type="password" name="password" required></br></td>
+		<td><input type="password" name="password2" required></br></td>
 	</tr>
 
 	

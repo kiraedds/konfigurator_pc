@@ -10,7 +10,7 @@ class LoginCest
     public function tryToTest(AcceptanceTester $I)
     {
 
-        $I->amonpage('/php_2018_konfigurator_pc/public/index.php');
+        $I->amonpage('index.php');
         $I->wantto('register myself');
         $I->seelink('Zarejestruj się');
         $I->click('Zarejestruj się');
@@ -31,7 +31,7 @@ class LoginCest
         $adres = "NY city";
         $telefon = "534234321";
         $email = "john.doe@example.com";
-        $login = "THEjohn";
+        $login = "THEjohn2";
         $haslo = "john123";
 
         $I->fillField("firstname",$imie);
@@ -39,8 +39,8 @@ class LoginCest
         $I->fillField("address", $adres);
         $I->fillField("phone", $telefon);
         $I->fillField("email", $email);
-        $I->fillField("login", $login);
-        $I->fillField("password", $haslo);
+        $I->fillField("login2", $login);
+        $I->fillField("password2", $haslo);
 
 
         $I->dontSeeInDatabase("users", ["login" => "$login"]);
@@ -48,15 +48,21 @@ class LoginCest
         $I->click('Zarejestruj');
 
 
-        //$I->SeeInDatabase("users", ["id" => ""]);
+      //  $I->SeeInDatabase("users", ["login" => "$login"]);
 
-        $I->amonpage('http://127.0.0.1/php_2018_konfigurator_pc/public/customer.php');
+        $I->wantto('login myself');
+        $I->fillField("login", $login);
+        $I->fillField("password", $haslo);
+
+        $I->click('ZALOGUJ');
+
+        $I->amonpage('customer.php');
 
         $I->wantto('logout me-self');
         $I->see("Wyloguj");
         $I->click("Wyloguj");
 
-        $I->amonpage('/php_2018_konfigurator_pc/public/index.php');
+        $I->amonpage('index.php');
         $I->seelink('Zarejestruj się');
 
 

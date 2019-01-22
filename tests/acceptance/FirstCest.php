@@ -11,7 +11,7 @@ class FirstCest
     {
 
         $I->wantTo('see homepage');
-        $I->amOnPage("/php_2018_konfigurator_pc/public/index.php");
+        $I->amOnPage("index.php");
         $I->seeInTitle('KONFIGURATOR PC');
 
         $I->wantTo("have default database when visiting homepage");
