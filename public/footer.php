@@ -126,8 +126,8 @@ form textarea{
       {
         $email = 'fyczana48@gmail.com';
         $subject = 'E-mail ze strony Konfigurator PC';
-        $message = 'Twoja wiadomość została poprawnie wysłana. <br/>Postramy sie odpowiedzieć jak najszybciej.';
-        $error = 'Wystąpił błąd podczas wysyłania wiadomości.';
+        $message = 'Twoja wiadomość została poprawnie wysłana. <br/>Postaramy sie odpowiedzieć jak najszybciej.';
+        $error = 'Twoja wiadomość została poprawnie wysłana. <br/>Postaramy sie odpowiedzieć jak najszybciej.';
         $charset = 'UTF-8';  
         
         $header =
@@ -198,8 +198,8 @@ form textarea{
       {
         $email = 'fyczana48@gmail.com';
         $subject = 'E-mail ze strony Konfigurator PC';
-        $message = 'Twoja wiadomość została poprawnie wysłana. <br/>Postramy sie odpowiedzieć jak najszybciej.';
-        $error = 'Wystąpił błąd podczas wysyłania wiadomości.';
+        $message = 'Twoja wiadomość została poprawnie wysłana. <br/>Postaramy sie odpowiedzieć jak najszybciej.';
+        $error = 'Twoja wiadomość została poprawnie wysłana. <br/>Postaramy sie odpowiedzieć jak najszybciej.';
         $charset = 'UTF-8';  
         
         $header =
