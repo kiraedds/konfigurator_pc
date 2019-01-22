@@ -30,7 +30,9 @@ mysqldump -u test test -p > tests/_data/dump.sql
 ```
 ### 3.How to set up codeception?
 ```bash
+
 composer require codeception/codeception --dev
 
-vendor/bin/codecept bootstrap```
+vendor/bin/codecept bootstrap
+```
 
