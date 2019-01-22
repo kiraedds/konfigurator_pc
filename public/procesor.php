@@ -1,20 +1,10 @@
 
 <div id="procesory">
 
-    <?php
-
-
-    ?>
-
 
     <div class="table">
         <?php
         include('connect.php');
-
-
-
-        $min[]='';
-        $max[]='';
 
         $db     = Database::getInstance();
         $db     = $db->getConnection();
@@ -27,8 +17,16 @@
         $maksimum->execute();
         $max = $maksimum->fetch(PDO::FETCH_ASSOC);
 
-
-        echo "<form name='filt' action='index.php?value=procesory' method='post'>";
+        if(!isset($_SESSION['role']) || empty($_SESSION['role'])) {
+            echo "<form name='filt' action='index.php?value=procesory' method='post'>";
+        }
+        else if($_SESSION['role'] == 'customer' && $_SESSION['zalogowany'] == 'true') {
+            echo "<form name='filt' action='customer.php?value=procesory' method='post'>";
+        }
+        else if( $_SESSION['role'] == 'seller' ) {
+            echo "<form name='filt' action='seller.php?value=procesory' method='post'>";
+        }
+        //echo "<form name='filt' action='index.php?value=procesory' method='post'>";
 
         echo "<output for='rangeinput'>Przedział cen</output><br>";
         echo "Min:  <input name='rangeinput' id='rangeinput' type='range' min=".$min['min(p.price)']." max=".$max['max(p.price)']." value=".$min['min(p.price)']." onchange='rangevalue.value=value'>";
