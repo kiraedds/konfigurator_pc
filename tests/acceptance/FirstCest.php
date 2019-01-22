@@ -21,6 +21,33 @@ class FirstCest
         $I->see('Strona główna');
         $I->click('Strona główna');
 
+        $I->wantto('look around');
+        $I->see('na skróty');
+        $I->see('płyty główne');
+        $I->see('procesory');
+        $I->see('karty graficzne');
+        $I->see('pamięć ram');
+        $I->see('zasilacze');
+        $I->see('obudowy');
+        $I->see('dyski');
+        $I->see('chłodzenie');
+        $I->see('rejestracja');
+
+
+        $I->wantto('send a question');
+        $email = "email@gmail.com";
+        $subject = "subject";
+        $massage = "massage about a subject";
+        $I->fillField("email",$email);
+        $I->fillField("subject", $subject);
+        $I->fillField("massage", $massage);
+        $I->click('Wyślij');
+        $I->see("Twoja wiadomość została poprawnie wysłana. 
+Postaramy sie odpowiedzieć jak najszybciej.");
+        
+
+
+
 
 
 

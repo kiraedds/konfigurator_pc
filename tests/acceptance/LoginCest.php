@@ -49,7 +49,7 @@ class LoginCest
 
 
         //$I->SeeInDatabase("users", ["id" => ""]);
-        
+
         $I->amonpage('http://127.0.0.1/php_2018_konfigurator_pc/public/customer.php');
 
         $I->wantto('logout me-self');
