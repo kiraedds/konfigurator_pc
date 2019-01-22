@@ -8,7 +8,8 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://localhost:8015
+    #        url: http://localhost:8015
+            url: http://127.0.0.1  #-<this if above ( url: http://localhost:8015 ) not working
 #        - WebDriver:
 #            url: http://localhost:8007
 #            browser: chrome
