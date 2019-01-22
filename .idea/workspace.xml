@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/checkout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/deleteorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/deleteorder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/status.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/status.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/_data/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_data/dump.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,17 +28,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="44" />
+          <entry key="php" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="44" />
+          <entry key="PHP" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -103,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/status.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="240">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -159,6 +160,7 @@
         <option value="$PROJECT_DIR$/public/viewCart.php" />
         <option value="$PROJECT_DIR$/public/checkout.php" />
         <option value="$PROJECT_DIR$/public/deleteorder.php" />
+        <option value="$PROJECT_DIR$/public/status.php" />
       </list>
     </option>
   </component>
@@ -171,10 +173,10 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="451" />
-    <option name="y" value="145" />
-    <option name="width" value="780" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="340" />
+    <option name="y" value="104" />
+    <option name="width" value="770" />
     <option name="height" value="875" />
   </component>
   <component name="ProjectView">
@@ -232,16 +234,15 @@
       <workItem from="1548086589234" duration="3836000" />
       <workItem from="1548093218978" duration="11847000" />
       <workItem from="1548151646937" duration="4695000" />
-      <workItem from="1548158165181" duration="252000" />
+      <workItem from="1548158165181" duration="507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1091000" />
+    <option name="totallyTimeSpent" value="1346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10565635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -342,8 +343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/status.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="240">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>

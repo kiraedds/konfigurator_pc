@@ -53,7 +53,7 @@
     </select></br>
 	<input type="text" name="name" placeholder="Nazwa produktu" required></br>
     <textarea cols="50" rows="6" name="description" placeholder="Opis" required></textarea></br>
-	<input type="text" name="price"  value="zł" placeholder="Cena" required></br>
+	<input type="text" name="price"  value="" placeholder="Cena" required></br>
     <input type="file" name="image" required/><br/>
     <input type="submit" name="upload" value="Wyślij plik"/>
 	</form>';
