@@ -46,7 +46,10 @@ $cart = new Cart;
             if(data == 'ok'){
                 location.reload();
             }else{
+                location.reload();
                 alert('Zmieniono ilość produktów w zamówieniu.');
+                //$redirectLoc = 'customer.php?value=viewCart';
+                //header("refresh: 3;");
             }
         });
     }
