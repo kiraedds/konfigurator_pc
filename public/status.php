@@ -14,7 +14,8 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 	$result = $db->query("UPDATE orders SET status='wysłano' where id='$id'");
 	$result->execute();
 
-	$msg->success('Zmieniono status zamówienia');
+	//$msg->success('Zmieniono status zamówienia');
+	echo 'Zmieniono status zamówienia';
 
 };?>
 

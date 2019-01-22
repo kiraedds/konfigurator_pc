@@ -50,7 +50,7 @@
 </style>
 <?php
 include 'connect.php';
-include 'Cart.php';
+include 'cart.php';
 
 if (!session_id()) @session_start();
 $cart = new Cart;
