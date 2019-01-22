@@ -9,6 +9,7 @@ class AddingRemovingProductsCest
     // tests
     public function tryToTest(AcceptanceTester $I)
     {
+
         $I->wantto('Add Products to my basket');
     }
 }
