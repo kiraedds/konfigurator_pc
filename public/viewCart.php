@@ -37,7 +37,7 @@
 
  <?php
 // initializ shopping cart class
-include 'Cart.php';
+include 'cart.php';
 $cart = new Cart;
 ?> 
     <script>
