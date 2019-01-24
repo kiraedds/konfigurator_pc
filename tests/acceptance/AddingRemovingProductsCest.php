@@ -18,5 +18,12 @@ class AddingRemovingProductsCest
         $I->fillField("password",'kowal');
         $I->click('ZALOGUJ');
         $I->seeInCurrentUrl('/customer');
+
+
+        $I->see('płyty główne');
+        $I->click('płyty główne', 'a[href = "customer.php?value=plytyglowne"]');
+        $I->seeInCurrentUrl('/customer.php?value=plytyglowne');
+
+
     }
 }
