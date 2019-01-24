@@ -7,12 +7,12 @@
 actor: AcceptanceTester
 modules:
     enabled:
- #       - PhpBrowser:
-    #        url: http://localhost:8015
+        - PhpBrowser:
+            url: http://localhost:8020
  #           url: http://127.0.0.1/php_2018_konfigurator_pc/public/index.php  #-<this if above ( url: http://localhost:8015 ) not working
-        - WebDriver:
-            url: http://localhost:8020/
-            browser: chrome
+ #       - WebDriver:
+ #           url: http://localhost:8020/
+ #           browser: chrome
         - \Helper\Acceptance
         - Db:
             dsn: 'mysql:host=localhost;dbname=test'
