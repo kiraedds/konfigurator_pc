@@ -23,6 +23,7 @@ class AddingRemovingProductsCest
         $I->see('płyty główne');
         $I->click('płyty główne', 'a[href = "customer.php?value=plytyglowne"]');
         $I->seeInCurrentUrl('/customer.php?value=plytyglowne');
+        $I->see('dodaj do koszyka');
 
 
     }
