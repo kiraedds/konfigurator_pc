@@ -28,8 +28,19 @@ class AddingRemovingProductsCest
         $I->click('a[href = "customer.php?value=cartAction&action=addToCart&id=60"]');
         $I->see('twój koszyk');
         $I->click('a[href = "customer.php?value=viewCart"]');
-        $I->seeInCurrentUrl('/customer.php?value=viewCart');
+
+        $I->amOnPage("customer.php?value=viewCart");
         $I->see('potwierdź zakupy');
+        $I->see('kontunuuj zakupy');
+        $I->click('Potwierdź zakupy' , 'a[ href="customer.php?value=checkout"]');
+        $I->see('Wyślij zamówienie');
+        $I->click('Wyślij zamówienie');
+        $I->see('Zamówienie zostało wysłane do realizacji');
+
+        #adding working
+
+
+
 
     }
 }
