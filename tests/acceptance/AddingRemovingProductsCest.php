@@ -22,9 +22,14 @@ class AddingRemovingProductsCest
 
         $I->see('płyty główne');
         $I->click('płyty główne', 'a[href = "customer.php?value=plytyglowne"]');
+        $I->amOnPage("customer.php?value=plytyglowne");
         $I->seeInCurrentUrl('/customer.php?value=plytyglowne');
         $I->see('dodaj do koszyka');
-
+        $I->click('a[href = "customer.php?value=cartAction&action=addToCart&id=60"]');
+        $I->see('twój koszyk');
+        $I->click('a[href = "customer.php?value=viewCart"]');
+        $I->seeInCurrentUrl('/customer.php?value=viewCart');
+        $I->see('potwierdź zakupy');
 
     }
 }
