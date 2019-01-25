@@ -21,19 +21,22 @@ class AddingRemovingProductsCest
 
 
         $I->see('płyty główne');
-        $I->click('płyty główne', 'a[href = "customer.php?value=plytyglowne"]');
+       // $I->click('płyty główne', 'a[href = "customer.php?value=plytyglowne"]');
+        $I->click(['id' => 'plyty glowne']);
         $I->amOnPage("customer.php?value=plytyglowne");
         $I->seeInCurrentUrl('/customer.php?value=plytyglowne');
         $I->see('dodaj do koszyka');
         $I->click('a[href = "customer.php?value=cartAction&action=addToCart&id=60"]');
 
         $I->see('twój koszyk');
-        $I->click('a[href = "customer.php?value=viewCart"]');
+        //$I->click('a[href = "customer.php?value=viewCart"]');
 
         $I->amOnPage("customer.php?value=viewCart");
         $I->see('potwierdź zakupy');
         $I->see('kontunuuj zakupy');
-        $I->click('Potwierdź zakupy' , 'a[ href="customer.php?value=checkout"]');
+        //$I->click('Potwierdź zakupy' , 'a[ href="customer.php?value=checkout"]');
+        $I->click(['link' => 'Potwierdź zakupy']);
+        //$I->click(['class' => 'btn btn-success btn-block']);
         $I->see('Wyślij zamówienie');
         $I->click('Wyślij zamówienie');
         $I->see('Zamówienie zostało wysłane do realizacji');
@@ -47,22 +50,25 @@ class AddingRemovingProductsCest
 
 
         $I->see('płyty główne');
-        $I->click('płyty główne', 'a[href = "customer.php?value=plytyglowne"]');
+        //$I->click('płyty główne', 'a[href = "customer.php?value=plytyglowne"]');
+        $I->click(['id' => 'plyty glowne']);
         $I->amOnPage("customer.php?value=plytyglowne");
         $I->seeInCurrentUrl('/customer.php?value=plytyglowne');
         $I->see('dodaj do koszyka');
         $I->click('a[href = "customer.php?value=cartAction&action=addToCart&id=60"]');
 
         $I->see('twój koszyk');
-        $I->click('a[href = "customer.php?value=viewCart"]');
+        //$I->click('a[href = "customer.php?value=viewCart"]');
+        $I->click(['link' => 'Twój koszyk']);
 
         $I->amOnPage("customer.php?value=viewCart");
         $I->see('potwierdź zakupy');
         $I->see('kontunuuj zakupy');
 
         $I->click('a.btn.btn-danger');
-
-
+        $I->seeInPopup('Czy na pewno chcesz usunąć te produkty z listy?');
+        $I->acceptPopup();
+        //$I->click("OK");
         $I->see('kontunuuj zakupy');
         $I->dontsee('potwierdź zakupy');
         $I->see('Twój koszyk jest pusty...');

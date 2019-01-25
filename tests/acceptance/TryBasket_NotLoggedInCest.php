@@ -16,7 +16,7 @@ class TryBasket_NotLoggedInCest
 
         $I->wantto('browse through some motherboards');
         $I->see('płyty główne');
-        $I->click('a[href="index.php?value=plytyglowne"]');
+        $I->click(['id' => 'plyty glowne']);
         $I->amOnPage("index.php?value=plytyglowne");
         $I->seeInCurrentUrl('/index.php?value=plytyglowne');
 
