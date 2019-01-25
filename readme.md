@@ -35,4 +35,13 @@ composer require codeception/codeception --dev
 
 vendor/bin/codecept bootstrap
 ```
+### 4. How to run Selenium?
+
+```
+
+Open new terminal window and execute:
+
+cd Selenium/
+java -jar selenium-server-standalone-3.14.0.jar
+```
 
