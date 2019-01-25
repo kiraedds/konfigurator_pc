@@ -266,10 +266,10 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="y" value="25" />
-    <option name="width" value="960" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="86" />
+    <option name="y" value="104" />
+    <option name="width" value="1179" />
     <option name="height" value="925" />
   </component>
   <component name="ProjectView">
@@ -334,7 +334,7 @@
   </component>
   <component name="RunManager" selected="Codeception.Unnamed">
     <configuration name="Unnamed" type="CodeceptionConfigurationType" factoryName="Codeception">
-      <PhpTestRunnerSettings directory="$PROJECT_DIR$/tests/acceptance" file="$PROJECT_DIR$/tests/acceptance/AddingRemovingProductsCest.php" method="" scope="File" />
+      <PhpTestRunnerSettings directory="$PROJECT_DIR$/tests/acceptance" file="$PROJECT_DIR$/tests/acceptance/AddingRemovingProductsCest.php" method="" />
       <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/php_2018_konfigurator_pc/public/index.php">
